@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/growth_3677076 (1).png">
+  <link rel="stylesheet" href="./prettier.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Age calculator app</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,800&display=swap');
+  </style>
+
+</head>
+
+<body>
+<div class="all">
+<div class="top">
+  <h1>Age Calculator</h1>
+  <div class="links">
+  <button  id="git" onclick="linktogit()"><i class="fa fa-github" aria-hidden="true"></i>Github_repo</button>
+  <button id="linkidin" onclick="linktolinkidin()" style="margin-left: 10px;"><i class="fa fa-github" aria-hidden="true"></i>Github_repo</button>
+  </div>
+</div>
+
+<div class="main">
+
+<div class="days">
+  Day
+  <br>
+  <input type="text" placeholder="DD">
+</div>
+
+<div class="month">
+  Month
+  <br>
+  <input type="text" placeholder="MM">
+</div>
+
+<div class="year">
+  Year
+  <br>
+  <input type="text" placeholder="YY">
+ 
+</div>
+<div class="submit">
+  <button>arrow</button>
+</div>
+
+<div class="display">
+<hr>
+<br>
+  <div class="yeardis">
+<span id="yeardata">--</span><span>years</span>
+  </div>
+
+  <div class="monthdis">
+    <span id="monthdata">--</span><span>months</span>
+  </div>
+
+  <div class="daydis">
+    <span id="daydata">--</span><span>days</span>
+  </div>
+
+</div>
+
+</div>
+</div>
+  
+
+  <script src="./script.js"></script>
+</body>
+</html>
