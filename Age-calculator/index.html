@@ -20,8 +20,8 @@
 <div class="top">
   <h1>Age Calculator</h1>
   <div class="links">
-  <button  id="git" onclick="linktogit()"><i class="fa fa-github" aria-hidden="true"></i>Github_repo</button>
-  <button id="linkidin" onclick="linktolinkidin()" style="margin-left: 10px;"><i class="fa fa-github" aria-hidden="true"></i>Github_repo</button>
+  <button  id="git" onclick="linktogit()"><i class="fa fa-github" aria-hidden="true" ></i>Github_reposit</button>
+  <button id="linkidin" onclick="linktolinkidin()" style="margin-left: 10px;"><i class="fa fa-linkedin-square" aria-hidden="true" style="color: rgb(1, 1, 255)"></i>linkidin_profile</button>
   </div>
 </div>
 
@@ -30,38 +30,40 @@
 <div class="days">
   Day
   <br>
-  <input type="text" placeholder="DD">
+  <input type="number" placeholder="DD" min="0" max="31" id="dayinput">
+  <p class="days-err"></p>
 </div>
 
 <div class="month">
   Month
   <br>
-  <input type="text" placeholder="MM">
+  <input type="number" placeholder="MM" id="monthinput">
+  <p class="month-err"></p>
 </div>
 
 <div class="year">
   Year
   <br>
-  <input type="text" placeholder="YY">
- 
+  <input type="number" placeholder="YYYY" id="yearinput">
+  <p class="year-err"></p>
 </div>
 <div class="submit">
-  <button>arrow</button>
+  <button id="submit"><i class="fa fa-level-up" aria-hidden="true" style="font-size: 32px;color:white;transform:rotate(180deg);"></i></button>
 </div>
 
 <div class="display">
-<hr>
+
 <br>
   <div class="yeardis">
-<span id="yeardata">--</span><span>years</span>
+<span id="yeardata"  class="agee">--</span><span>years</span>
   </div>
 
   <div class="monthdis">
-    <span id="monthdata">--</span><span>months</span>
+    <span id="monthdata" class="agee">--</span><span>months</span>
   </div>
 
   <div class="daydis">
-    <span id="daydata">--</span><span>days</span>
+    <span id="daydata" class="agee">--</span><span>days</span>
   </div>
 
 </div>
